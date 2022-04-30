@@ -1,4 +1,5 @@
 import Post from "../components/Post/Post";
+import Header from "../components/Topbar/Topbar";
 
 // 들어오는 임시 데이터들 나중에 변경 예정
 const data = {
@@ -18,6 +19,7 @@ const data = {
 export default function Home() {
   return (
     <>
+      <Header />
       <Post props={data} />
     </>
   );
