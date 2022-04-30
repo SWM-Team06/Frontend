@@ -20,8 +20,8 @@ export default function PostFooter({ props }) {
   const [text, setText] = useState("");
   const [scroll, setScroll] = useState("hidden");
   const [moreview, setMoreview] = useState(false);
-  const linenumber = props.commentTitle.split("\n").length;
-  console.log(linenumber);
+
+  const linenumber = props.content.split("\n").length;
   const textSetValue = (e) => {
     e.preventDefault();
     setText(e.target.value);
@@ -41,14 +41,14 @@ export default function PostFooter({ props }) {
   return (
     <>
       <TitleStyledpost length={moreview ? linenumber : 1}>
-        <TitleTeam>{props.PostUser.teamName}</TitleTeam>
+        <TitleTeam>{props.team_name}</TitleTeam>
         {moreview ? (
           <TitleSpanStyledpost length={linenumber}>
-            {props.commentTitle}
+            {props.content}
           </TitleSpanStyledpost>
         ) : (
           <TitleSpanStyledpost length={1}>
-            {props.commentTitle.slice(0, 5)}...
+            {props.content.slice(0, 5)}...
           </TitleSpanStyledpost>
         )}
         {moreview ? (
