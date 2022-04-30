@@ -4,10 +4,15 @@ export const Styledpost = styled.div`
   width: 614px;
   // 반응형으로 설정하면 됨
 `;
+export const PostStyled = styled.div`
+  display: center;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+
 export const HeaderStyledpost = styled(Styledpost)`
   height: 70px; //반응형으로 설정하면
   border: solid 1px lightgray;
-  display: flex;
 `;
 export const HeaderleftStyledpost = styled.div`
   width: 546px; //반응형으로 설정하면 됨
