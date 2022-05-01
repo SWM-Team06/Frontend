@@ -1,3 +1,8 @@
+
+body {
+  margin: 0;
+}
+
 .topbarContainer {
   height: 50px;
   width: 100%;
@@ -6,6 +11,7 @@
   align-items: center;
   position: sticky;
   top: 0;
+  padding-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #dbdbdb;
 }
@@ -24,11 +30,13 @@
 
 .searchbar {
   width: 80%;
-  height: 40px;
+  height: 44px;
   background-color: #efefef;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-items: center;
+
 }
 
 .searchIcon {
@@ -39,11 +47,17 @@
 }
 
 .searchInput {
+  font-family: sans-serif;
   font-size: 17px;
   color: #8e8e8e;
   background-color: #efefef;
   border: none;
   width: 70%;
+
+  height: 10px;
+  resize: none;
+  overflow: auto;
+
 }
 
 .searchInput:focus {
@@ -59,7 +73,7 @@
   flex: 3;
   display: flex;
   justify-content: center;
-  /* background-color: blue; */
+
 }
 
 .topbarRight {

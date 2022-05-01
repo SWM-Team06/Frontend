@@ -1,6 +1,7 @@
 import Post from "../components/Post/Post";
 import Header from "../components/Topbar/Topbar";
 import { useGetFeed } from "../hooks/usehook";
+
 // 들어오는 임시 데이터들 나중에 변경 예정
 const data = {
   status: 200,

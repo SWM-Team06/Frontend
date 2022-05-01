@@ -35,6 +35,9 @@ const Header = () => {
           <span className="topbarIconItem">
             <Send className="topbarIcon" />
           </span>
+          <span className="topbarIconItem">
+            <FavoriteBorder className="topbarIcon" />
+          </span>
           <span onClick={onClick} className="topbarIconItem">
             <Person className="topbarIcon" />
           </span>
