@@ -1,6 +1,7 @@
 import Header from "../components/Topbar/Topbar";
 import ProfileHeader from "../components/ProfileHeader/ProfileHeader";
 import ProfileBody from "../components/ProfileBody/ProfileBody";
+import { useGetMyPage } from "../hooks/usehook";
 const data = {
   status: 200,
   success: true,
@@ -40,11 +41,12 @@ const data = {
   },
 };
 export default function profile() {
+  //const { data, isLoading } = useGetMyPage();
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div>
         <Header></Header>
-        <div style={{}}>
+        <div>
           <ProfileHeader props={data} />
           <ProfileBody props={data} />
         </div>
