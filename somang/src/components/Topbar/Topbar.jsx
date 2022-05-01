@@ -16,9 +16,12 @@ const Header = () => {
   const onClick = () => {
     navigate("/profile");
   };
+  const onMain = () => {
+    navigate("/");
+  };
   return (
     <div className="topbarContainer">
-      <div className="topbarLeft">
+      <div onClick={onMain} className="topbarLeft">
         <span className="logo">Somang</span>
       </div>
       <div className="topbarCenter">

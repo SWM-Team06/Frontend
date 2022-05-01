@@ -16,6 +16,7 @@ const countline = (data, onelineNumber) => {
 };
 
 export default function PostFooter({ props }) {
+  console.log(props);
   const [heart, setHeart] = useState(props.click);
   const [text, setText] = useState("");
   const [scroll, setScroll] = useState("hidden");
@@ -67,6 +68,16 @@ export default function PostFooter({ props }) {
             <FavoriteBorderIcon style={{ fontSize: 32 }} onClick={onClick} />
           )}
         </HeartStyled>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            fontSize: 14,
+            fontWeight: 700,
+          }}
+        >
+          {props.like_count}명이 좋아합니다.
+        </div>
       </CommentStyledpost>
     </>
   );

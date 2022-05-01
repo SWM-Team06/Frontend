@@ -1,11 +1,15 @@
 import React from "react";
 import style from "./ProfileBody.module.css";
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
+import Detail from "../Detail/Detail";
 export default function ProfileBody({ props }) {
+  const [post_data, setPost_data] = useState(null);
+  const [check, setCheck] = useState(false);
   let navigate = useNavigate();
   const onClick = (event) => {
-    navigate("/Detail", { post_id: event.post_id });
+    setCheck(!check);
+    setPost_data(event);
   };
   return (
     <>
@@ -32,6 +36,7 @@ export default function ProfileBody({ props }) {
           </div>
         ))}
       </div>
+      {check ? <Detail props={post_data} /> : <></>}
     </>
   );
 }

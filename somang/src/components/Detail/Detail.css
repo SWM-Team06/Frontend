@@ -1,0 +1,92 @@
+.container {
+  margin: 0;
+  left: 25%;
+  top: 25%;
+  position: absolute;
+  width: 53%;
+  height: 53%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 100%;
+}
+
+.logo_image {
+  top: 0px;
+  left: 55vh;
+  margin-top: 8px;
+  margin-left: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.team_name {
+  font-family: sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  top: 0px;
+  left: 61vh;
+  margin-top: 13px;
+}
+
+.desc {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  position: absolute;
+  top: 0px;
+  left: 61vh;
+  color: gray;
+  margin-top: 31px;
+}
+
+.divider {
+  height: 1;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 300px;
+  top: 10vh;
+  left: 58vh;
+  font-size: 15px;
+}
+
+.heart {
+  position: absolute;
+  top: 47vh;
+  left: 56vh;
+  width: 30px;
+  height: 30px;
+}
+
+.like_num {
+  position: absolute;
+  top: 47vh;
+  margin-left: 2px;
+  left: 59vh;
+  width: 200px;
+  height: 30px;
+  margin-top: 4px;
+}
+
+.upload_at {
+  position: absolute;
+  top: 48vh;
+  margin-left: 3px;
+  margin-top: 20px;
+  left: 56vh;
+  width: 200px;
+  height: 30px;
+  font-size: 11px;
+  color: gray;
+}
