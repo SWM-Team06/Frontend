@@ -1,8 +1,21 @@
 import React from "react";
 import "./topbar.css";
-import { Search, Person, Send, Home, FavoriteBorder } from "@material-ui/icons";
-
+import {
+  Search,
+  Person,
+  Send,
+  Chat,
+  Notifications,
+  Home,
+  FavoriteBorder,
+  InsertEmoticon,
+} from "@material-ui/icons";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  let navigate = useNavigate();
+  const onClick = () => {
+    navigate("/profile");
+  };
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
@@ -25,7 +38,7 @@ const Header = () => {
           <span className="topbarIconItem">
             <FavoriteBorder className="topbarIcon" />
           </span>
-          <span className="topbarIconItem">
+          <span onClick={onClick} className="topbarIconItem">
             <Person className="topbarIcon" />
           </span>
         </div>

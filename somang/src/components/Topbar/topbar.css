@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
 }
@@ -35,6 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+
 }
 
 .searchIcon {
@@ -51,9 +53,11 @@ body {
   background-color: #efefef;
   border: none;
   width: 70%;
+
   height: 10px;
   resize: none;
   overflow: auto;
+
 }
 
 .searchInput:focus {
@@ -64,10 +68,12 @@ body {
   color: #8e8e8e;
   font-size: 17px;
 }
+
 .topbarCenter {
   flex: 3;
   display: flex;
   justify-content: center;
+
 }
 
 .topbarRight {
