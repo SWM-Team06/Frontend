@@ -1,9 +1,11 @@
 import React from "react";
 import style from "./ProfileBody.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function ProfileBody({ props }) {
+  let navigate = useNavigate();
   const onClick = (event) => {
-    console.log(event.post_id);
+    navigate("/Detail", { post_id: event.post_id });
   };
   return (
     <>
