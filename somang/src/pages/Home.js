@@ -1,6 +1,5 @@
 import Post from "../components/Post/Post";
 import Header from "../components/Topbar/Topbar";
-import { Postdiv } from "../styles/styles";
 // 들어오는 임시 데이터들 나중에 변경 예정
 const data = {
   status: 200,
@@ -136,12 +135,16 @@ const data = {
 };
 export default function Home() {
   return (
-    <div>
+    <>
       <Header></Header>
-      {data.data.posts.map((item) => (
-        <Post key={item.post_id} props={item} />
-      ))}
-      {/* <Post props={data} /> */}
-    </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div>
+          {data.data.posts.map((item) => (
+            <Post key={item.post_id} props={item} />
+          ))}
+        </div>
+        {/* <Post props={data} /> */}
+      </div>
+    </>
   );
 }

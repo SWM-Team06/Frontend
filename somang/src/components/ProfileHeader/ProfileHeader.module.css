@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.header {
+  float: left;
+}
+
+.team_name {
+  font-weight: bold;
+  font: size 300px;
+}

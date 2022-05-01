@@ -5,8 +5,7 @@ export const Styledpost = styled.div`
   // 반응형으로 설정하면 됨
 `;
 export const PostStyled = styled.div`
-  display: center;
-  align-items: center;
+  margin-top: 10px;
   margin-bottom: 10px;
 `;
 

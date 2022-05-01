@@ -67,21 +67,6 @@ export default function PostFooter({ props }) {
             <FavoriteBorderIcon style={{ fontSize: 32 }} onClick={onClick} />
           )}
         </HeartStyled>
-
-        {/* API로 넣어주기만 하면 될듯? */}
-        <textarea
-          placeholder="댓글 달기..."
-          style={{
-            width: 514,
-            height: scroll === "hidden" ? 18 * Stringline : 18 * 3,
-            resize: "none",
-            border: "none",
-            overflowY: scroll,
-            outlineColor: "white",
-          }}
-          value={text}
-          onChange={(e) => textSetValue(e)}
-        />
       </CommentStyledpost>
     </>
   );
